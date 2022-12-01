@@ -7,9 +7,19 @@ https://adventofcode.com/2022
 ### about
 
 Trying to challenge myself and complete the full 25 days of AOC, using Anthony Sottile's repo structure as a starting point.
+https://adventofcode.com/2022
+
 
 Set up according to his tutorial here:
 https://www.youtube.com/watch?v=CZZLCeRya74
+
+Still need to set up:
+    1. virual env
+        a. something about aactivator?
+    2. pytest
+        a. probably need pip
+        b. https://pythontest.com/
+        c. 
 
 ### timing
 
