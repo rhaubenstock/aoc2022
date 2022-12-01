@@ -3,17 +3,18 @@ from __future__ import annotations
 import argparse
 import os.path
 
-import pytest
+# import pytest
 
-import support
+# import support
 
 INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
 
 def compute(s: str) -> int:
     return max(
-        sum(int(line) for line in part.splitlines())
-        for part in s.split('\n\n')
+        sum(int(num_str) for num_str in block.splitlines())
+        #splits on double-space
+        for block in s.split('\n\n') 
     )
 
 
@@ -36,12 +37,12 @@ INPUT_S = '''\
 EXPECTED = 24000
 
 
-@pytest.mark.parametrize(
-    ('input_s', 'expected'),
-    (
-        (INPUT_S, EXPECTED),
-    ),
-)
+# @pytest.mark.parametrize(
+#     ('input_s', 'expected'),
+#     (
+#         (INPUT_S, EXPECTED),
+#     ),
+# )
 def test(input_s: str, expected: int) -> None:
     assert compute(input_s) == expected
 
@@ -51,7 +52,9 @@ def main() -> int:
     parser.add_argument('data_file', nargs='?', default=INPUT_TXT)
     args = parser.parse_args()
 
-    with open(args.data_file) as f, support.timing():
+    # with open(args.data_file) as f, support.timing():
+    #     print(compute(f.read()))
+    with open(args.data_file) as f:
         print(compute(f.read()))
 
     return 0

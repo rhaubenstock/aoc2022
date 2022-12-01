@@ -3,14 +3,13 @@ advent of code 2022
 
 https://adventofcode.com/2022
 
-### stream / youtube
-
-- [Streamed daily on twitch](https://twitch.tv/anthonywritescode)
-- [Streams uploaded to youtube afterwards](https://www.youtube.com/@anthonywritescode-vods)
 
 ### about
 
-for 2022, I'm planning to implement in python
+Trying to challenge myself and complete the full 25 days of AOC, using Anthony Sottile's repo structure as a starting point.
+
+Set up according to his tutorial here:
+https://www.youtube.com/watch?v=CZZLCeRya74
 
 ### timing
 
