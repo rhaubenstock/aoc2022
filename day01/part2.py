@@ -15,10 +15,7 @@ def compute(s: str) -> int:
         sum(int(line) for line in part.splitlines())
         for part in s.split('\n\n')
     )
-    first = next(calorie_counts)
-    second = next(calorie_counts)
-    third = next(calorie_counts)
-
+    
     first, second, third = sorted((next(calorie_counts), next(calorie_counts), next(calorie_counts)))
 
 
