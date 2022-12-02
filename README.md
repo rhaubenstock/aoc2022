@@ -7,7 +7,6 @@ https://adventofcode.com/2022
 ### about
 
 Trying to challenge myself and complete the full 25 days of AOC, using Anthony Sottile's repo structure as a starting point.
-https://adventofcode.com/2022
 
 
 Set up according to his tutorial here:
