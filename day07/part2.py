@@ -5,13 +5,12 @@ import os.path
 
 INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
-class Node():
+class Node:
     def __init__ (self, parent):
         self.size = 0
         self.children = {}
         self.parent = parent
     
-
 
 def compute(s: str) -> int:
     #okay so first build tree

@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import os.path
 
-INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
+INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input2.txt')
 
 
 def compute(s: str) -> int:
